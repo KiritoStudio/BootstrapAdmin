@@ -40,7 +40,7 @@ namespace BootstrapAdmin.Web.Controllers
         public async Task<IActionResult> Login(string userName, string password, [FromQuery] string? remember, [FromQuery] string? returnUrl, [FromQuery] string? appId,
             [FromServices] BootstrapAppContext context,
             [FromServices] IUser userService,
-            [FromServices] IDict dictService)
+            [FromServices] IDict dictService) 
         {
             if (string.IsNullOrEmpty(userName) || string.IsNullOrEmpty(password))
             {
